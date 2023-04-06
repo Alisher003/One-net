@@ -68,6 +68,13 @@
     &-btn {
       margin-left: auto;
       margin-top: 20px;
+      transition: 1s;
+      
+    }
+
+    &-btn:hover {
+      opacity: 0.7;
+      background-color: red;
     }
   }
 }

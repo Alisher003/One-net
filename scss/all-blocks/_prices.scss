@@ -25,6 +25,7 @@
         padding: 20px 50px;
         cursor: pointer;
         text-align: center;  
+        transition: 1s ease;
         
         &__heading {
           font-family: 'Lato';
@@ -77,6 +78,7 @@
       border: 1px solid #31343A;
       background: #090D14;
       border-radius: 16px;
+      transition: 1s;
 
       &__desc {
         font-family: 'Lato';

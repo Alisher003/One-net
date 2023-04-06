@@ -15,3 +15,65 @@
   border: none;
   cursor: pointer;
 }
+
+
+.nav-item__link:hover {
+  color: rgb(80, 73, 73);
+}
+
+.nav-item__link:active {
+  color: #333;
+}
+
+.nav-item__btnTwo:hover {
+  background-color: red;
+  opacity: 0.7;
+}
+
+.nav-item__btnOne:hover {
+  opacity: 0.6;
+}
+
+.nav-item__btnThree:hover {
+  opacity: 0.6;
+}
+
+.main-top-left__btn:hover {
+  background-color: red;
+  opacity: 0.7;
+}
+
+button {
+  cursor: pointer;
+  transition:  0.5s;
+}
+
+
+.btnH:hover {
+  border: 1px solid transparent;
+  border-color: red;
+  background: #161a1f;
+  box-shadow: 0px 8px 44px rgba(255, 62, 45, 0.16);
+  border: 1px solid rgba(255, 62, 45, 0.24);
+}
+
+
+.prices-main-item:hover {
+
+  .prices-main-item__btn {
+    background-color:  #FF3E2D;
+  }
+}
+
+.info-top-main-left:hover {
+  cursor: pointer;
+}
+
+.info-top-main-left__box:hover {
+  cursor: pointer;
+  color: #FF3E2D;
+}
+
+.logo {
+  cursor: pointer;
+}
