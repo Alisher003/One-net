@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -73,7 +74,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted; /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -153,8 +154,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -163,8 +163,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -172,9 +171,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -182,9 +181,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -193,9 +192,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -239,8 +238,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -248,8 +247,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -257,7 +256,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -265,7 +264,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -308,6 +307,10 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+* {
+  font-family: "Lato", sans-serif;
 }
 
 html {
@@ -355,14 +358,713 @@ img {
   padding: 0 20px;
 }
 
+.btn {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "salt" on;
+  color: #FFFFFF;
+  padding: 10px 65px;
+  background: #FF3E2D;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
 header {
-  background-color: red;
+  background-color: #090D14;
 }
 
 .nav {
   display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 30px 0;
+  gap: 32px;
+}
+.nav-item {
+  list-style: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.nav-item__img-res {
+  display: none;
+}
+.nav-item__link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.nav-item__btnOne {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+}
+.nav-item__btnTwo {
+  padding: 12px 32px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FF3E2D;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+.nav-item__btnThree {
+  background: #4318BE;
+  border-radius: 10px;
+  border: none;
+  padding: 7px;
 }
 
-p {
-  color: red;
-} /*# sourceMappingURL=main.css.map */
+.right {
+  padding-left: 55px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .nav-item {
+    display: none;
+  }
+  .nav {
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .nav-item {
+    display: none;
+  }
+  .nav-item__btnTwo, .nav-item__btnOne, .nav-item__btnThree {
+    display: none;
+  }
+  .nav-item__img-res {
+    display: block;
+  }
+}
+.main {
+  background-color: #090D14;
+}
+.main-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-top-left {
+  margin: 0;
+  padding: 0;
+}
+.main-top-left__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 140%;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+.main-top-left__desc {
+  padding-top: 20px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+.main-top-left__btn {
+  margin-top: 24px;
+  padding: 10px 90px;
+  border: none;
+  color: #ffffff;
+  background: #FF3E2D;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .main-top {
+    display: inline;
+  }
+  .main-top-left {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main-top {
+    display: inline;
+  }
+  .main-top-left {
+    text-align: center;
+  }
+  .main-top-left__heading {
+    font-size: 26px;
+  }
+}
+.prices {
+  background: #0F131A;
+}
+.prices-top {
+  padding: 0;
+  margin: 0;
+}
+.prices-top-list {
+  max-width: 950px;
+  margin: -70px auto;
+  list-style: none;
+  display: flex;
+  background: #161A1F;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0px 8px 24px rgba(5, 7, 11, 0.6);
+  border-radius: 16px;
+  padding: 16px;
+  gap: 24px;
+}
+.prices-top-list-item {
+  background: #0F1319;
+  border-radius: 10px;
+  padding: 20px 50px;
+  cursor: pointer;
+  text-align: center;
+}
+.prices-top-list-item__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.prices-main__desc {
+  padding-top: 117px;
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FF3E2D;
+  margin: 0;
+}
+.prices-main__heading {
+  font-family: "Lato";
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.prices-main-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.prices-main-item {
+  padding: 20px;
+  border: 1px solid #31343A;
+  background: #090D14;
+  border-radius: 16px;
+}
+.prices-main-item__desc {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FF3E2D;
+  margin: 0;
+}
+.prices-main-item-box {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
+.prices-main-item-box__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.prices-main-item-box__desc {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding: 0;
+}
+.prices-main-item__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FF3E2D;
+  padding: 24px 0;
+  margin: 0;
+}
+.prices-main-item-boxTwo {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+}
+.prices-main-item-boxTwo__desc {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0;
+  margin: 0;
+}
+.prices-main-item-boxTwo__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0;
+  margin: 0;
+}
+.prices-main-item-boxTwo__img {
+  padding: 10px;
+  margin-top: -10px;
+}
+.prices-main-item__btn {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px 140px;
+  background: #32363C;
+  border-radius: 10px;
+}
+.prices-footer {
+  padding-top: 65px;
+}
+.prices-footer-list {
+  padding: 48px 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.prices-footer-list-item {
+  border: 1px solid #FFFFFF;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+.prices-footer-list-item__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  padding-top: 24px;
+  margin: 0;
+  color: #FFFFFF;
+}
+.prices-footer-list-item__img {
+  width: 36px;
+  height: 36px;
+}
+
+@media only screen and (max-width: 1270px) {
+  .prices-main-list {
+    flex-direction: column;
+  }
+  .prices-main-item {
+    width: 80%;
+  }
+  .prices-top-list {
+    flex-direction: column;
+  }
+  .prices-top-list-item {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .prices-main-item__btn {
+    width: 100%;
+    padding: 10px 45%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .prices-footer-list {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .prices-main-item__btn {
+    width: 100%;
+  }
+  .prices-footer-list-item {
+    width: 100%;
+  }
+}
+.signUp {
+  background: #090D14;
+}
+.signUp-top {
+  padding: 65px 0;
+}
+.signUp-top__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+.signUp-top-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.signUp-top-left__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 8px;
+  margin: 0;
+}
+.signUp-top-left__input {
+  width: 379px;
+  padding: 16px 13px;
+  margin: 0;
+  outline: none;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+.signUp-top-right {
+  width: 100%;
+}
+.signUp-top-right__input {
+  align-items: center;
+  width: 840px;
+  height: 152px;
+  padding: 12px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+.signUp-top-btn {
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .signUp-top__heading {
+    text-align: center;
+  }
+  .signUp-top-left {
+    width: 100%;
+  }
+  .signUp-top-main {
+    text-align: center;
+    flex-direction: column;
+  }
+  .signUp-top-right {
+    display: none;
+  }
+  .signUp-top-btn {
+    margin: 20px auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .signUp-top-left__input {
+    width: 100%;
+  }
+}
+.info {
+  background: #0f0f0f !important;
+}
+.info-top {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+}
+.info-top-main-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-top-main-box__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+  padding: 25px;
+  margin: 0;
+}
+.info-top-main-box__headingTwo {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+.info-top-main-left {
+  background: url(../../img/info-bg.svg);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.info-top-main-left__box {
+  position: absolute;
+  margin-top: 280px;
+  padding: 24px;
+}
+.info-top-main-left__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+.info-top-main-left__desc {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.info-top-right-list {
+  list-style: none;
+  padding-top: 80px;
+}
+.info-top-right-list-item {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  gap: 24px;
+}
+.info-top-right-list-item__img {
+  border-radius: 10px;
+}
+.info-top-right-list-item-box__desc {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #939191;
+  padding: 6px 0;
+  margin: 0;
+}
+.info-top-right-list-item-box__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 8px 0;
+  margin: 0;
+}
+.info-top-right-list-item-box__descTwo {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media only screen and (max-width: 1220px) {
+  .info-top {
+    flex-direction: column;
+  }
+  .info-top-right-list {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .info-top-main-left__box {
+    display: none;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .info-top-right-list-item__img {
+    width: 100%;
+  }
+  .info-top-right-list-item {
+    flex-direction: column;
+  }
+}
+.questions {
+  background: #090d14;
+  padding: 64px 0;
+}
+.questions-top {
+  display: flex;
+  justify-content: space-between;
+}
+.questions-top-main {
+  width: 584px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+  margin-top: 32px;
+}
+.questions-top__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-questions {
+  display: flex;
+  justify-content: space-between;
+}
+.faq-questions__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+.faq-answer {
+  display: none;
+  transition: max-height 1.4s ease;
+}
+.faq-answer__desc {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding: 0;
+}
+
+.show {
+  display: block;
+}
+
+.btn-faq {
+  background: transparent;
+  border: none;
+}
+
+@media only screen and (max-width: 1220px) {
+  .questions-top {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .questions-top-main {
+    width: 100%;
+  }
+}
+.footer {
+  background: #0A0E15;
+}
+.footer-top {
+  text-align: center;
+  padding: 40px 0;
+}
+.footer-top__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer-top__img {
+  cursor: pointer;
+}
+.footer-botom {
+  background: rgba(54, 49, 48, 0.54);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.footer-botom-top {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-botom__heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+.footer-botom__headingTwo {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-botom__headingTwo {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,149 @@
+.info {
+  background: #0f0f0f !important;
+
+  &-top {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+
+    &-main {
+      &-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__heading {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          color: #ffffff;
+          padding: 25px;
+          margin: 0;
+        }
+
+        &__headingTwo {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          color: #ffffff;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      &-left {
+        background: url(../../img/info-bg.svg);
+        background-repeat: no-repeat;
+        border-radius: 10px;
+
+        &__box {
+          position: absolute;
+          margin-top: 280px;
+          padding: 24px;
+        }
+
+        &__heading {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          color: #ffffff;
+          padding: 0;
+          margin: 0;
+        }
+
+        &__desc {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+
+    &-right {
+      &-list {
+        list-style: none;
+        padding-top: 80px;
+
+        &-item {
+          display: flex;
+          align-items: center;
+          padding-top: 24px;
+          gap: 24px;
+
+          &__img {
+            border-radius: 10px;
+          }
+
+          &-box {
+            &__desc {
+              font-family: "Lato";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              color: #939191;
+              padding: 6px 0;
+              margin: 0;
+            }
+
+            &__heading {
+              font-family: "Lato";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              color: #ffffff;
+              padding: 8px 0;
+              margin: 0;
+            }
+
+            &__descTwo {
+              padding: 0;
+              margin: 0;
+              font-family: "Lato";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              color: rgba(255, 255, 255, 0.4);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1220px) {
+  .info-top {
+    flex-direction: column;
+  }
+
+  .info-top-right-list {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+@media only screen and (max-width: 690px) {
+  .info-top-main-left__box {
+    display: none;
+  }
+  
+}
+
+@media only screen and (max-width: 515px) {
+  .info-top-right-list-item__img {
+    width: 100%;
+  }
+
+
+  .info-top-right-list-item {
+    flex-direction: column;
+  }
+  
+}

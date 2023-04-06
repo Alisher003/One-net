@@ -46,3 +46,29 @@
     
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .main-top {
+    display: inline;
+  }
+
+  .main-top-left {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main-top {
+    display: inline;
+  }
+
+  .main-top-left {
+    text-align: center;
+  }
+
+  .main-top-left__heading {
+    font-size: 26px;
+  }
+}
+
+

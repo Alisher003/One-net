@@ -19,7 +19,7 @@
       gap: 24px;
 
       &-item {
-        max-width: 303px;
+        // max-width: 303px;
         background: #0F1319;
         border-radius: 10px;
         padding: 20px 50px;
@@ -220,4 +220,45 @@
 
   }
 
+}
+
+
+@media only screen and (max-width: 1270px) {
+  .prices-main-list {
+    flex-direction: column;
+  }
+
+  .prices-main-item {
+    width: 80%;
+  }
+
+  .prices-top-list {
+    flex-direction: column;
+  }
+
+  .prices-top-list-item {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .prices-main-item__btn  {
+    width: 100%;
+    padding: 10px 45%;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .prices-footer-list {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .prices-main-item__btn  {
+    width: 100%;
+  }
+  
+  .prices-footer-list-item {
+    width: 100%;
+  }
 }

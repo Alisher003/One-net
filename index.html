@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./scss/main.css">
     <title>login-page</title>
 </head>
 <body>
@@ -12,12 +12,16 @@
     <header>
         <div class="container">
             <!-- nav -->
-                <nav class="nav">
-                    <li class="nav-item">
-                        <a class="nav-item__link" href="">
-                            <img class="nav-item__img" src="./img/site-logo.svg" alt="">
-                        </a>
-                    </li>
+            <nav class="nav">
+
+                    <img class="nav-item__img-res" src="./img/humburger.svg" alt="">
+
+                    <a class="nav-item__link" href="">
+                        <img class="nav-item__img" src="./img/site-logo.svg" alt="">
+                    </a>
+
+                    <img class="nav-item__img-res" src="./img/sign-up.svg" alt="">
+
                     <li class="nav-item">
                         <a class="nav-item__link" href="">О компании</a>
                     </li>
@@ -34,26 +38,20 @@
                     <li class="nav-item right">
                         <a class="nav-item__link" href="">+998 71 234 56 78</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-item__link" href="">
-                            <button class="nav-item__btnOne">
-                                <img src="./img/btn-img.svg" alt="">
-                                Ру
-                            </button>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item__link" href="">
-                            <button class="nav-item__btnTwo">Личный кабинет</button>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-item__link" href="">
-                            <button class="nav-item__btnThree">
-                                <img src="./img/btn-img2.svg" alt="">
-                            </button>
-                        </a>
-                    </li>
+                    <a class="nav-item__link" href="">
+                        <button class="nav-item__btnOne">
+                            <img src="./img/btn-img.svg" alt="">
+                            Ру
+                        </button>
+                    </a>
+                    <a class="nav-item__link" href="">
+                        <button class="nav-item__btnTwo">Личный кабинет</button>
+                    </a>
+                    <a class="nav-item__link" href="">
+                        <button class="nav-item__btnThree">
+                            <img src="./img/btn-img2.svg" alt="">
+                        </button>
+                    </a>
                 </nav>
         </div>
     </header>
@@ -79,7 +77,7 @@
     <section class="prices">
         <div class="container">
             <div class="prices-top">
-                <!-- list  -->
+              
                 <ul class="prices-top-list">
                     <li class="prices-top-list-item">
                         <img class="prices-top-list-item__img" src="./img/prices-imgOne.svg" alt="">
@@ -100,7 +98,7 @@
                 <p class="prices-main__desc">Тарифы</p>
                 <h3 class="prices-main__heading">Популярные тарифы</h3>
 
-                <!-- list -->
+                
                 <ul class="prices-main-list">
                     <li class="prices-main-item">
                         <p class="prices-main-item__desc">Премиум</p>
@@ -221,7 +219,7 @@
                 </ul>
             </div>
 
-            <!-- prices-footer -->
+            
             <div class="prices-footer">
                     <ul class="prices-footer-list">
                         <li class="prices-footer-list-item">
@@ -246,8 +244,256 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer></footer>
+    <!-- sign up -->
+    <section class="signUp">
+        <div class="container">
+            
+            <div class="signUp-top">
+                <h3 class="signUp-top__heading">Оставить заявку</h3>
+                <div class="signUp-top-main">
+                    <div class="signUp-top-left">
+                        <h4 class="signUp-top-left__heading">Имя</h4>
+                        <input class="signUp-top-left__input" type="text" placeholder="Введите свое имя">
+                        <h4 class="signUp-top-left__heading">Номер телефона</h4>
+                        <input class="signUp-top-left__input" type="number" placeholder="+998 __ ___ __ __">
+                    </div>
+                    <div class="signUp-top-right">
+                        <h4 class="signUp-top-left__heading">Введите текст</h4>
+                        <textarea class="signUp-top-right__input" type="text" placeholder="Введите текст заявки"></textarea>
+                    </div>
+                </div>
+                <button class="signUp-top-btn btn">Отправить заявку</button>
+            </div>
+        </div>
+    </section>
 
+
+    <!-- info -->
+    <section class="info">
+        <div class="container">
+            <div class="info-top">
+                <div class="info-top-main">
+                    <div class="info-top-main-box">
+                        <h2 class="info-top-main-box__heading">Новости и оповещания</h2>
+                        <h4 class="info-top-main-box__headingTwo">Все новости</h4>
+                    </div>
+                    <div class="info-top-main-left">
+                        <div class="info-top-main-left__box">
+                            <h4 class="info-top-main-left__heading">Мирзиёев подписал указ о мерах по повышению <br> благосостояния населения Каракалпакстана</h4>
+                            <p class="info-top-main-left__desc">Президент подписал указ «О дополнительных мерах по повышению благосостояния населения <br> Республики Каракалпакстан путем ускоренного развития предпринимательства, инновации</p>
+                        </div>
+                        <img src="./img/info-img.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="info-top-right">
+                    <ul class="info-top-right-list">
+                        <li class="info-top-right-list-item">
+                            <img class="info-top-right-list-item__img" src="./img/info-imgOne.svg" alt="">
+                            <div class="info-top-right-list-item-box">
+                                <p class="info-top-right-list-item-box__desc">Сентябрь 6, 2022</p>
+                                <h5 class="info-top-right-list-item-box__heading">50% стоимости страхования <br> урожая будет покрывать госуд...</h5>
+                                <p class="info-top-right-list-item-box__descTwo">Во время видеоселекторного совещания у <br> президента, состоявш...</p>
+                            </div>
+                        </li>
+
+                        <li class="info-top-right-list-item">
+                            <img class="info-top-right-list-item__img" src="./img/info-img-two.svg" alt="">
+                            <div class="info-top-right-list-item-box">
+                                <p class="info-top-right-list-item-box__desc">Сентябрь 6, 2022</p>
+                                <h5 class="info-top-right-list-item-box__heading">50% стоимости страхования <br> урожая будет покрывать госуд...</h5>
+                                <p class="info-top-right-list-item-box__descTwo">Во время видеоселекторного совещания у <br> президента, состоявш...</p>
+                            </div>
+                        </li>
+
+                        <li class="info-top-right-list-item">
+                            <img class="info-top-right-list-item__img" src="./img/info-img0three.svg" alt="">
+                            <div class="info-top-right-list-item-box">
+                                <p class="info-top-right-list-item-box__desc">Сентябрь 6, 2022</p>
+                                <h5 class="info-top-right-list-item-box__heading">50% стоимости страхования <br> урожая будет покрывать госуд...</h5>
+                                <p class="info-top-right-list-item-box__descTwo">Во время видеоселекторного совещания у <br> президента, состоявш...</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Partners -->
+    <!-- <section class="partners">
+        <div class="container">
+            <swiper-container>
+                <swiper-slide>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quos ipsam nostrum dolor ut nemo impedit sapiente dolores, praesentium neque?</swiper-slide>
+                <swiper-slide>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem rem rerum voluptatibus maxime reprehenderit alias. Cumque veritatis cum perferendis!</swiper-slide>
+                <swiper-slide>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias soluta molestiae nisi ab nihil aliquid labore quod ipsam perspiciatis consequuntur.</swiper-slide>
+                <swiper-slide>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nihil doloremque suscipit laudantium impedit iusto voluptatum nesciunt, culpa itaque porro?</swiper-slide>
+              </swiper-container>
+        </div>
+    </section> -->
+
+    <!-- questions -->
+
+    <section class="questions">
+        <div class="container">
+            <h3 class="questions-top__heading">Часто задаваемые вопросы</h3>
+
+
+            <div class="questions-top "> 
+                <div class="quessssss">
+
+                    <div class="questions-top-main">
+                        <div class="faq">
+                            <div class="faq-questions">
+                                <h5 class="faq-questions__heading">Какова начальная цена сайта?</h5>
+                                <button class="btn-faq">
+                                    <img class="faq-questions__img" src="./img/path.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <hr>
+                                <p class="faq-answer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Consequatur impedit nisi laudantium unde vel soluta <br> dolores quasi alias provident necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="questions-top-main">
+                        <div class="faq">
+                            <div class="faq-questions">
+                                <h5 class="faq-questions__heading">Какова ваша цель создания веб-сайта?</h5>
+                                <button class="btn-faq">
+                                    <img class="faq-questions__img" src="./img/path.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <hr>
+                                <p class="faq-answer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Consequatur impedit nisi laudantium unde vel soluta <br> dolores quasi alias provident necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="questions-top-main">
+                        <div class="faq">
+                            <div class="faq-questions">
+                                <h5 class="faq-questions__heading">Какой способ оплаты я могу использовать? </h5>
+                                <button class="btn-faq">
+                                    <img class="faq-questions__img" src="./img/path.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <hr>
+                                <p class="faq-answer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Consequatur impedit nisi laudantium unde vel soluta <br> dolores quasi alias provident necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="questions-top-main">
+                        <div class="faq">
+                            <div class="faq-questions">
+                                <h5 class="faq-questions__heading">Какие самые немедленные действия?</h5>
+                                <button class="btn-faq">
+                                    <img class="faq-questions__img" src="./img/path.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <hr>
+                                <p class="faq-answer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Consequatur impedit nisi laudantium unde vel soluta <br> dolores quasi alias provident necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="questions-top-main">
+                        <div class="faq">
+                            <div class="faq-questions">
+                                <h5 class="faq-questions__heading">Какой способ оплаты я могу использовать?</h5>
+                                <button class="btn-faq">
+                                    <img class="faq-questions__img" src="./img/path.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <hr>
+                                <p class="faq-answer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Consequatur impedit nisi laudantium unde vel soluta <br> dolores quasi alias provident necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-top-main">
+                        <div class="faq">
+                            <div class="faq-questions">
+                                <h5 class="faq-questions__heading">Какие самые немедленные действия?</h5>
+                                <button class="btn-faq">
+                                    <img class="faq-questions__img" src="./img/path.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <hr>
+                                <p class="faq-answer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Consequatur impedit nisi laudantium unde vel soluta <br> dolores quasi alias provident necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-top-main">
+                        <div class="faq">
+                            <div class="faq-questions">
+                                <h5 class="faq-questions__heading">Какова начальная цена сайта?</h5>
+                                <button class="btn-faq">
+                                    <img class="faq-questions__img" src="./img/path.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <hr>
+                                <p class="faq-answer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Consequatur impedit nisi laudantium unde vel soluta <br> dolores quasi alias provident necessitatibus.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="questions-top-main">
+                        <div class="faq">
+                            <div class="faq-questions">
+                                <h5 class="faq-questions__heading">Какова ваша цель создания веб-сайта?</h5>
+                                <button class="btn-faq">
+                                    <img class="faq-questions__img" src="./img/path.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <hr>
+                                <p class="faq-answer__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Consequatur impedit nisi laudantium unde vel soluta <br> dolores quasi alias provident necessitatibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <img class="footer-top__img" src="./img/footer-log.svg" alt="">
+                <h5 class="footer-top__heading">
+                    Первый открытый протокол беспроводной сети передачи данных, разработанный для целей <br> автоматизации зданий и управления распределёнными объектами. <br> One-Net может быть использован со множеством существующих приёмопередатчиков <br> (трансиверов) и микроконтроллеров самых разных производителей.
+                </h5>
+            </div>
+
+
+        </div>
+        <div class="footer-botom">
+            <div class="container">
+                <div class="footer-botom-top">
+                    <h4 class="footer-botom__heading">© One Net LLC. All rights reserved.</h4>
+                    <img src="./img/uiclogo.svg" alt="">
+                    <h4 class="footer-botom__headingTwo">Правила пользования</h4>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
