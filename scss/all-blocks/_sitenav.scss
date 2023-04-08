@@ -83,13 +83,24 @@
     display: none;
   }
 
+  .nav {
+    gap: 15px;
+  }
+
+  .nav-item__img {
+    margin-left: 20px;
+  }
+  
+
   .nav-item__btnTwo, .nav-item__btnOne, .nav-item__btnThree {
     display: none;
   }
 
+  
 
   .nav-item__img-res {
     display: block;
+    margin-left: auto;
   }
 }
 
